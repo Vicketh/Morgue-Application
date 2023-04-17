@@ -1,0 +1,731 @@
+[
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "url_for",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "url_for",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "SQLAlchemy",
+        "importPath": "flask_sqlalchemy",
+        "description": "flask_sqlalchemy",
+        "isExtraImport": true,
+        "detail": "flask_sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "SQLAlchemy",
+        "importPath": "flask_sqlalchemy",
+        "description": "flask_sqlalchemy",
+        "isExtraImport": true,
+        "detail": "flask_sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "LoginManager",
+        "importPath": "flask_login",
+        "description": "flask_login",
+        "isExtraImport": true,
+        "detail": "flask_login",
+        "documentation": {}
+    },
+    {
+        "label": "login_user",
+        "importPath": "flask_login",
+        "description": "flask_login",
+        "isExtraImport": true,
+        "detail": "flask_login",
+        "documentation": {}
+    },
+    {
+        "label": "logout_user",
+        "importPath": "flask_login",
+        "description": "flask_login",
+        "isExtraImport": true,
+        "detail": "flask_login",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "flask_login",
+        "description": "flask_login",
+        "isExtraImport": true,
+        "detail": "flask_login",
+        "documentation": {}
+    },
+    {
+        "label": "UserMixin",
+        "importPath": "flask_login",
+        "description": "flask_login",
+        "isExtraImport": true,
+        "detail": "flask_login",
+        "documentation": {}
+    },
+    {
+        "label": "sqlite3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlite3",
+        "description": "sqlite3",
+        "detail": "sqlite3",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "Body",
+        "kind": 6,
+        "importPath": "auto id",
+        "description": "auto id",
+        "peekOfCode": "class Body(db.Model):\n    id = db.Column(db.String(36), primary_key=True, default=str(uuid.uuid4()))\n    name = db.Column(db.String(50), nullable=False)\n    age = db.Column(db.Integer, nullable=False)\n    primary_contact = db.Column(db.String(55), nullable=False)\n    cause_of_death = db.Column(db.String(100), nullable=False)\n    date_of_arrival = db.Column(db.String(20), nullable=False)",
+        "detail": "auto id",
+        "documentation": {}
+    },
+    {
+        "label": "Body",
+        "kind": 6,
+        "importPath": "body",
+        "description": "body",
+        "peekOfCode": "class Body:\n    def __init__(self, name, age, id, primary_contact, cause_of_death, date_of_arrival):\n        self.name = name\n        self.age = age\n        self.id = id\n        self.primary_contact = primary_contact\n        self.cause_of_death = cause_of_death\n        self.date_of_arrival = date_of_arrival\nclass Morgue:\n    def __init__(self):",
+        "detail": "body",
+        "documentation": {}
+    },
+    {
+        "label": "Morgue",
+        "kind": 6,
+        "importPath": "body",
+        "description": "body",
+        "peekOfCode": "class Morgue:\n    def __init__(self):\n        self.bodies = []\n    def add_body(self, body):\n        self.bodies.append(body)\n    def update_body(self, name, age, id, primary_contact, cause_of_death, date_of_arrival):\n        for body in self.bodies:\n            if body.name == name:\n                body.age = age\n                body.id = id",
+        "detail": "body",
+        "documentation": {}
+    },
+    {
+        "label": "parser",
+        "kind": 5,
+        "importPath": "interface",
+        "description": "interface",
+        "peekOfCode": "parser = argparse.ArgumentParser(description=\"Morgue Management System\")\nparser.add_argument(\"--add\", metavar=(\"name\", \"age\", \"cause_of_death\", \"date_of_arrival\"),\n                    nargs=4, help=\"Add a new body to the system\")\nparser.add_argument(\"--update\", metavar=(\"name\", \"age\", \"cause_of_death\", \"date_of_arrival\"),\n                    nargs=4, help=\"Update an existing body in the system\")\nparser.add_argument(\"--delete\", metavar=\"name\", help=\"Delete a body from the system\")\nparser.add_argument(\"--search\", metavar=(\"name\", \"age\", \"cause_of_death\", \"date_of_arrival\"),\n                    nargs=4, help=\"Search for bodies in the system\")\nparser.add_argument(\"--display\", action=\"store_true\", help=\"Display all bodies in the system\")\nargs = parser.parse_args()",
+        "detail": "interface",
+        "documentation": {}
+    },
+    {
+        "label": "args",
+        "kind": 5,
+        "importPath": "interface",
+        "description": "interface",
+        "peekOfCode": "args = parser.parse_args()\nmorgue = Morgue()\nif args.add:\n    name, age, cause_of_death, date_of_arrival = args.add\n    body = Body(name, int(age), cause_of_death, date_of_arrival)\n    morgue.add_body(body)\n    print(f\"Added body: {name}\")\nif args.update:\n    name, age, cause_of_death, date_of_arrival = args.update\n    if morgue.update_body(name, int(age), cause_of_death, date_of_arrival):",
+        "detail": "interface",
+        "documentation": {}
+    },
+    {
+        "label": "morgue",
+        "kind": 5,
+        "importPath": "interface",
+        "description": "interface",
+        "peekOfCode": "morgue = Morgue()\nif args.add:\n    name, age, cause_of_death, date_of_arrival = args.add\n    body = Body(name, int(age), cause_of_death, date_of_arrival)\n    morgue.add_body(body)\n    print(f\"Added body: {name}\")\nif args.update:\n    name, age, cause_of_death, date_of_arrival = args.update\n    if morgue.update_body(name, int(age), cause_of_death, date_of_arrival):\n        print(f\"Updated body: {name}\")",
+        "detail": "interface",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "login",
+        "description": "login",
+        "peekOfCode": "class User(db.Model, UserMixin):\n    id = db.Column(db.Integer, primary_key=True)\n    username = db.Column(db.String(50), unique=True, nullable=False)\n    password = db.Column(db.String(100), nullable=False)\n@login_manager.user_loader\ndef load_user(user_id):\n    return User.query.get(int(user_id))\n@app.route('/')\n@login_required\ndef index():",
+        "detail": "login",
+        "documentation": {}
+    },
+    {
+        "label": "load_user",
+        "kind": 2,
+        "importPath": "login",
+        "description": "login",
+        "peekOfCode": "def load_user(user_id):\n    return User.query.get(int(user_id))\n@app.route('/')\n@login_required\ndef index():\n    bodies = Body.query.all()\n    return render_template('index.html', bodies=bodies)\n@app.route('/login', methods=['GET', 'POST'])\ndef login():\n    if request.method == 'POST':",
+        "detail": "login",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "login",
+        "description": "login",
+        "peekOfCode": "def index():\n    bodies = Body.query.all()\n    return render_template('index.html', bodies=bodies)\n@app.route('/login', methods=['GET', 'POST'])\ndef login():\n    if request.method == 'POST':\n        username = request.form['username']\n        password = request.form['password']\n        user = User.query.filter_by(username=username).first()\n        if user and user.password == password:",
+        "detail": "login",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "login",
+        "description": "login",
+        "peekOfCode": "def login():\n    if request.method == 'POST':\n        username = request.form['username']\n        password = request.form['password']\n        user = User.query.filter_by(username=username).first()\n        if user and user.password == password:\n            login_user(user)\n            return redirect(url_for('index'))\n        else:\n            error = 'Invalid username or password.'",
+        "detail": "login",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "kind": 2,
+        "importPath": "login",
+        "description": "login",
+        "peekOfCode": "def logout():\n    logout_user()\n    return redirect(url_for('login'))\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "detail": "login",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "login",
+        "description": "login",
+        "peekOfCode": "app = Flask(__name__)\napp.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///morgue.db'\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\napp.config['SECRET_KEY'] = 'secret_key' # Replace with a secure secret key in production\ndb = SQLAlchemy(app)\nlogin_manager = LoginManager(app)\nclass User(db.Model, UserMixin):\n    id = db.Column(db.Integer, primary_key=True)\n    username = db.Column(db.String(50), unique=True, nullable=False)\n    password = db.Column(db.String(100), nullable=False)",
+        "detail": "login",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['SQLALCHEMY_DATABASE_URI']",
+        "kind": 5,
+        "importPath": "login",
+        "description": "login",
+        "peekOfCode": "app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///morgue.db'\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\napp.config['SECRET_KEY'] = 'secret_key' # Replace with a secure secret key in production\ndb = SQLAlchemy(app)\nlogin_manager = LoginManager(app)\nclass User(db.Model, UserMixin):\n    id = db.Column(db.Integer, primary_key=True)\n    username = db.Column(db.String(50), unique=True, nullable=False)\n    password = db.Column(db.String(100), nullable=False)\n@login_manager.user_loader",
+        "detail": "login",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['SQLALCHEMY_TRACK_MODIFICATIONS']",
+        "kind": 5,
+        "importPath": "login",
+        "description": "login",
+        "peekOfCode": "app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\napp.config['SECRET_KEY'] = 'secret_key' # Replace with a secure secret key in production\ndb = SQLAlchemy(app)\nlogin_manager = LoginManager(app)\nclass User(db.Model, UserMixin):\n    id = db.Column(db.Integer, primary_key=True)\n    username = db.Column(db.String(50), unique=True, nullable=False)\n    password = db.Column(db.String(100), nullable=False)\n@login_manager.user_loader\ndef load_user(user_id):",
+        "detail": "login",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['SECRET_KEY']",
+        "kind": 5,
+        "importPath": "login",
+        "description": "login",
+        "peekOfCode": "app.config['SECRET_KEY'] = 'secret_key' # Replace with a secure secret key in production\ndb = SQLAlchemy(app)\nlogin_manager = LoginManager(app)\nclass User(db.Model, UserMixin):\n    id = db.Column(db.Integer, primary_key=True)\n    username = db.Column(db.String(50), unique=True, nullable=False)\n    password = db.Column(db.String(100), nullable=False)\n@login_manager.user_loader\ndef load_user(user_id):\n    return User.query.get(int(user_id))",
+        "detail": "login",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "login",
+        "description": "login",
+        "peekOfCode": "db = SQLAlchemy(app)\nlogin_manager = LoginManager(app)\nclass User(db.Model, UserMixin):\n    id = db.Column(db.Integer, primary_key=True)\n    username = db.Column(db.String(50), unique=True, nullable=False)\n    password = db.Column(db.String(100), nullable=False)\n@login_manager.user_loader\ndef load_user(user_id):\n    return User.query.get(int(user_id))\n@app.route('/')",
+        "detail": "login",
+        "documentation": {}
+    },
+    {
+        "label": "login_manager",
+        "kind": 5,
+        "importPath": "login",
+        "description": "login",
+        "peekOfCode": "login_manager = LoginManager(app)\nclass User(db.Model, UserMixin):\n    id = db.Column(db.Integer, primary_key=True)\n    username = db.Column(db.String(50), unique=True, nullable=False)\n    password = db.Column(db.String(100), nullable=False)\n@login_manager.user_loader\ndef load_user(user_id):\n    return User.query.get(int(user_id))\n@app.route('/')\n@login_required",
+        "detail": "login",
+        "documentation": {}
+    },
+    {
+        "label": "Body",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class Body(db.Model):\n    id = db.Column(db.Integer, primary_key=True)\n    name = db.Column(db.String(50), nullable=False)\n    age = db.Column(db.Integer, nullable=False) \n    primary_contact  = db.column(db.String(55), nullabble=False)\n    cause_of_death = db.Column(db.String(100), nullable=False)\n    date_of_arrival = db.Column(db.String(20), nullable=False)\n@app.route('/')\ndef index():\n    bodies = Body.query.all()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def index():\n    bodies = Body.query.all()\n    return render_template('index.html', bodies=bodies)\n@app.route('/add', methods=['GET', 'POST'])\ndef add_body():\n    if request.method == 'POST':\n        name = request.form['name']\n        age = request.form['age']\n        primary_contact = request.form['primary_contact']\n        cause_of_death = request.form['cause_of_death']",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "add_body",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def add_body():\n    if request.method == 'POST':\n        name = request.form['name']\n        age = request.form['age']\n        primary_contact = request.form['primary_contact']\n        cause_of_death = request.form['cause_of_death']\n        date_of_arrival = request.form['date_of_arrival']\n        new_body = Body(name=name, age=age, primary_contact=primary_contact, cause_of_death=cause_of_death, date_of_arrival=date_of_arrival)\n        db.session.add(new_body)\n        db.session.commit()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "edit_body",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def edit_body(id):\n    body = Body.query.get_or_404(id)\n    if request.method == 'POST':\n        body.name = request.form['name']\n        body.age = request.form['age']\n        body.primary_contact = request.form['primary_contact']\n        body.cause_of_death = request.form['cause_of_death']\n        body.date_of_arrival = request.form['date_of_arrival']\n        db.session.commit()\n        return redirect(url_for('index'))",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "delete_body",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def delete_body(id):\n    body = Body.query.get_or_404(id)\n    db.session.delete(body)\n    db.session.commit()\n    return redirect(url_for('index'))\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = Flask(__name__)\napp.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///morgue.db'\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\ndb = SQLAlchemy(app)\nclass Body(db.Model):\n    id = db.Column(db.Integer, primary_key=True)\n    name = db.Column(db.String(50), nullable=False)\n    age = db.Column(db.Integer, nullable=False) \n    primary_contact  = db.column(db.String(55), nullabble=False)\n    cause_of_death = db.Column(db.String(100), nullable=False)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['SQLALCHEMY_DATABASE_URI']",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///morgue.db'\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\ndb = SQLAlchemy(app)\nclass Body(db.Model):\n    id = db.Column(db.Integer, primary_key=True)\n    name = db.Column(db.String(50), nullable=False)\n    age = db.Column(db.Integer, nullable=False) \n    primary_contact  = db.column(db.String(55), nullabble=False)\n    cause_of_death = db.Column(db.String(100), nullable=False)\n    date_of_arrival = db.Column(db.String(20), nullable=False)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['SQLALCHEMY_TRACK_MODIFICATIONS']",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\ndb = SQLAlchemy(app)\nclass Body(db.Model):\n    id = db.Column(db.Integer, primary_key=True)\n    name = db.Column(db.String(50), nullable=False)\n    age = db.Column(db.Integer, nullable=False) \n    primary_contact  = db.column(db.String(55), nullabble=False)\n    cause_of_death = db.Column(db.String(100), nullable=False)\n    date_of_arrival = db.Column(db.String(20), nullable=False)\n@app.route('/')",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "db = SQLAlchemy(app)\nclass Body(db.Model):\n    id = db.Column(db.Integer, primary_key=True)\n    name = db.Column(db.String(50), nullable=False)\n    age = db.Column(db.Integer, nullable=False) \n    primary_contact  = db.column(db.String(55), nullabble=False)\n    cause_of_death = db.Column(db.String(100), nullable=False)\n    date_of_arrival = db.Column(db.String(20), nullable=False)\n@app.route('/')\ndef index():",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "generate_id",
+        "kind": 2,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "def generate_id():\n    # Connect to the database\n    conn = sqlite3.connect(\"morgue.db\")\n    c = conn.cursor()\n    # Get the highest existing body ID\n    c.execute(\"SELECT MAX(body_id) FROM bodies\")\n    max_id = c.fetchone()[0]\n    # Generate a new ID by adding 1 to the highest existing ID\n    new_id = max_id + 1 if max_id else 1\n    # Close the database connection and return the new ID",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "add_body",
+        "kind": 2,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "def add_body(name, age, gender, date_of_death, date_of_admission, diagnosis, status):\n    # Generate a new unique body ID\n    body_id = generate_id()\n    # Connect to the database\n    conn = sqlite3.connect(\"morgue.db\")\n    c = conn.cursor()\n    # Insert the new body into the database\n    c.execute(\"INSERT INTO bodies (body_id, name, age, primary_contact, cause_of_death, date_of_death status) VALUES (?, ?, ?, ?, ?, ?, ?)\", (body_id, name, age, primary_contact, cause_of_death, date_of_death, status))\n    # Commit the changes and close the database connection\n    conn.commit()",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "update_status",
+        "kind": 2,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "def update_status(body_id, status):\n    # Connect to the database\n    conn = sqlite3.connect(\"morgue.db\")\n    c = conn.cursor()\n    # Update the status of the specified body in the database\n    c.execute(\"UPDATE bodies SET status = ? WHERE body_id = ?\", (status, body_id))\n    # Commit the changes and close the database connection\n    conn.commit()\n    conn.close()\n# Function to add a new invoice to the database",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "add_invoice",
+        "kind": 2,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "def add_invoice(body_id, amount_due):\n    # Generate a new unique invoice ID\n    invoice_id = generate_id()\n    # Get the current date and time\n    date_issued = datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n    # Connect to the database\n    conn = sqlite3.connect(\"morgue.db\")\n    c = conn.cursor()\n    # Insert the new invoice into the database\n    c.execute(\"INSERT INTO invoices (invoice_id, body_id, date_issued, amount_due, paid) VALUES (?, ?, ?, ?, ?)\", (invoice_id, body_id, date_issued, amount_due, 0))",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "mark_invoice_paid",
+        "kind": 2,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "def mark_invoice_paid(invoice_id):\n    # Connect to the database\n    conn = sqlite3.connect(\"morgue.db\")\n    c = conn.cursor()\n    # Update the specified invoice in the database\n    c.execute(\"UPDATE invoices SET paid = ? WHERE invoice_id = ?\", (1, invoice_id))\n    # Commit the changes and close the database connection\n    conn.commit()\n    conn.close()\n#***example***",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "conn",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "conn = sqlite3.connect('morgue.db')\nc = conn.cursor()\n# Create the bodies table\nc.execute('''CREATE TABLE bodies\n             (name text, age integer, primary_contact text, cause_of_death text, date_of_arrival text)''')\n# Commit the changes\nconn.commit()\n# Close the connection\nconn.close()\n#add new",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "c = conn.cursor()\n# Create the bodies table\nc.execute('''CREATE TABLE bodies\n             (name text, age integer, primary_contact text, cause_of_death text, date_of_arrival text)''')\n# Commit the changes\nconn.commit()\n# Close the connection\nconn.close()\n#add new\nimport sqlite3",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "conn",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "conn = sqlite3.connect('morgue.db')\nc = conn.cursor()\n# Add a new body to the database\nname = 'Isagi Yoichi'\nage = 35\nprimary_contact = 'Nagi Seishiro - Brother'\ncause_of_death = 'Car accident'\ndate_of_arrival = '2023-01-01'\nc.execute(\"INSERT INTO bodies VALUES (?, ?, ?, ?)\", (name, age, primary_contact, cause_of_death, date_of_arrival))\n# Commit the changes",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "c = conn.cursor()\n# Add a new body to the database\nname = 'Isagi Yoichi'\nage = 35\nprimary_contact = 'Nagi Seishiro - Brother'\ncause_of_death = 'Car accident'\ndate_of_arrival = '2023-01-01'\nc.execute(\"INSERT INTO bodies VALUES (?, ?, ?, ?)\", (name, age, primary_contact, cause_of_death, date_of_arrival))\n# Commit the changes\nconn.commit()",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "name = 'Isagi Yoichi'\nage = 35\nprimary_contact = 'Nagi Seishiro - Brother'\ncause_of_death = 'Car accident'\ndate_of_arrival = '2023-01-01'\nc.execute(\"INSERT INTO bodies VALUES (?, ?, ?, ?)\", (name, age, primary_contact, cause_of_death, date_of_arrival))\n# Commit the changes\nconn.commit()\n# Close the connection\nconn.close()",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "age = 35\nprimary_contact = 'Nagi Seishiro - Brother'\ncause_of_death = 'Car accident'\ndate_of_arrival = '2023-01-01'\nc.execute(\"INSERT INTO bodies VALUES (?, ?, ?, ?)\", (name, age, primary_contact, cause_of_death, date_of_arrival))\n# Commit the changes\nconn.commit()\n# Close the connection\nconn.close()\n#UPDATE EXISTING",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "primary_contact",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "primary_contact = 'Nagi Seishiro - Brother'\ncause_of_death = 'Car accident'\ndate_of_arrival = '2023-01-01'\nc.execute(\"INSERT INTO bodies VALUES (?, ?, ?, ?)\", (name, age, primary_contact, cause_of_death, date_of_arrival))\n# Commit the changes\nconn.commit()\n# Close the connection\nconn.close()\n#UPDATE EXISTING\nimport sqlite3",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "cause_of_death",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "cause_of_death = 'Car accident'\ndate_of_arrival = '2023-01-01'\nc.execute(\"INSERT INTO bodies VALUES (?, ?, ?, ?)\", (name, age, primary_contact, cause_of_death, date_of_arrival))\n# Commit the changes\nconn.commit()\n# Close the connection\nconn.close()\n#UPDATE EXISTING\nimport sqlite3\nconn = sqlite3.connect('morgue.db')",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "date_of_arrival",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "date_of_arrival = '2023-01-01'\nc.execute(\"INSERT INTO bodies VALUES (?, ?, ?, ?)\", (name, age, primary_contact, cause_of_death, date_of_arrival))\n# Commit the changes\nconn.commit()\n# Close the connection\nconn.close()\n#UPDATE EXISTING\nimport sqlite3\nconn = sqlite3.connect('morgue.db')\nc = conn.cursor()",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "conn",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "conn = sqlite3.connect('morgue.db')\nc = conn.cursor()\n# Update an existing body in the database\nname = 'Isagi Yoichi'\nage = 41\nprimary_contact = 'Shelly Mwihaki - Spouse'\ncause_of_death = 'Drowning'\ndate_of_arrival = '2023-01-05'\nc.execute(\"UPDATE bodies SET age = ?, primary_contact = ?, cause_of_death = ?, date_of_arrival = ? WHERE name = ?\", (age, primary_contact, cause_of_death, date_of_arrival, name))\n# Commit the changes",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "c = conn.cursor()\n# Update an existing body in the database\nname = 'Isagi Yoichi'\nage = 41\nprimary_contact = 'Shelly Mwihaki - Spouse'\ncause_of_death = 'Drowning'\ndate_of_arrival = '2023-01-05'\nc.execute(\"UPDATE bodies SET age = ?, primary_contact = ?, cause_of_death = ?, date_of_arrival = ? WHERE name = ?\", (age, primary_contact, cause_of_death, date_of_arrival, name))\n# Commit the changes\nconn.commit()",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "name = 'Isagi Yoichi'\nage = 41\nprimary_contact = 'Shelly Mwihaki - Spouse'\ncause_of_death = 'Drowning'\ndate_of_arrival = '2023-01-05'\nc.execute(\"UPDATE bodies SET age = ?, primary_contact = ?, cause_of_death = ?, date_of_arrival = ? WHERE name = ?\", (age, primary_contact, cause_of_death, date_of_arrival, name))\n# Commit the changes\nconn.commit()\n# Close the connection\nconn.close()",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "age = 41\nprimary_contact = 'Shelly Mwihaki - Spouse'\ncause_of_death = 'Drowning'\ndate_of_arrival = '2023-01-05'\nc.execute(\"UPDATE bodies SET age = ?, primary_contact = ?, cause_of_death = ?, date_of_arrival = ? WHERE name = ?\", (age, primary_contact, cause_of_death, date_of_arrival, name))\n# Commit the changes\nconn.commit()\n# Close the connection\nconn.close()\n#***DELETE EXISTING****",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "primary_contact",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "primary_contact = 'Shelly Mwihaki - Spouse'\ncause_of_death = 'Drowning'\ndate_of_arrival = '2023-01-05'\nc.execute(\"UPDATE bodies SET age = ?, primary_contact = ?, cause_of_death = ?, date_of_arrival = ? WHERE name = ?\", (age, primary_contact, cause_of_death, date_of_arrival, name))\n# Commit the changes\nconn.commit()\n# Close the connection\nconn.close()\n#***DELETE EXISTING****\nimport sqlite3",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "cause_of_death",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "cause_of_death = 'Drowning'\ndate_of_arrival = '2023-01-05'\nc.execute(\"UPDATE bodies SET age = ?, primary_contact = ?, cause_of_death = ?, date_of_arrival = ? WHERE name = ?\", (age, primary_contact, cause_of_death, date_of_arrival, name))\n# Commit the changes\nconn.commit()\n# Close the connection\nconn.close()\n#***DELETE EXISTING****\nimport sqlite3\nconn = sqlite3.connect('morgue.db')",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "date_of_arrival",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "date_of_arrival = '2023-01-05'\nc.execute(\"UPDATE bodies SET age = ?, primary_contact = ?, cause_of_death = ?, date_of_arrival = ? WHERE name = ?\", (age, primary_contact, cause_of_death, date_of_arrival, name))\n# Commit the changes\nconn.commit()\n# Close the connection\nconn.close()\n#***DELETE EXISTING****\nimport sqlite3\nconn = sqlite3.connect('morgue.db')\nc = conn.cursor()",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "conn",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "conn = sqlite3.connect('morgue.db')\nc = conn.cursor()\n# Delete an existing body from the database\nname = 'Isagi Yoichi'\nc.execute(\"DELETE FROM bodies WHERE name = ?\", (name,))\n# Commit the changes\nconn.commit()\n# Close the connection\nconn.close()\n#***SEARCH FOR BODIES***",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "c = conn.cursor()\n# Delete an existing body from the database\nname = 'Isagi Yoichi'\nc.execute(\"DELETE FROM bodies WHERE name = ?\", (name,))\n# Commit the changes\nconn.commit()\n# Close the connection\nconn.close()\n#***SEARCH FOR BODIES***\nimport sqlite3",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "name = 'Isagi Yoichi'\nc.execute(\"DELETE FROM bodies WHERE name = ?\", (name,))\n# Commit the changes\nconn.commit()\n# Close the connection\nconn.close()\n#***SEARCH FOR BODIES***\nimport sqlite3\nconn = sqlite3.connect('morgue.db')\nc = conn.cursor()",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "conn",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "conn = sqlite3.connect('morgue.db')\nc = conn.cursor()\n# Search for bodies in the database\nname = 'Isagi Yoichi'\nage = None\nprimary_contact = None\ncause_of_death = None\ndate_of_arrival = None\nquery = \"SELECT * FROM bodies WHERE \"\nparams = []",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "c = conn.cursor()\n# Search for bodies in the database\nname = 'Isagi Yoichi'\nage = None\nprimary_contact = None\ncause_of_death = None\ndate_of_arrival = None\nquery = \"SELECT * FROM bodies WHERE \"\nparams = []\nif name:",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "name = 'Isagi Yoichi'\nage = None\nprimary_contact = None\ncause_of_death = None\ndate_of_arrival = None\nquery = \"SELECT * FROM bodies WHERE \"\nparams = []\nif name:\n    query += \"name = ? AND \"\n    params.append(name)",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "age = None\nprimary_contact = None\ncause_of_death = None\ndate_of_arrival = None\nquery = \"SELECT * FROM bodies WHERE \"\nparams = []\nif name:\n    query += \"name = ? AND \"\n    params.append(name)\nif age:",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "primary_contact",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "primary_contact = None\ncause_of_death = None\ndate_of_arrival = None\nquery = \"SELECT * FROM bodies WHERE \"\nparams = []\nif name:\n    query += \"name = ? AND \"\n    params.append(name)\nif age:\n    query += \"age = ? AND \"",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "cause_of_death",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "cause_of_death = None\ndate_of_arrival = None\nquery = \"SELECT * FROM bodies WHERE \"\nparams = []\nif name:\n    query += \"name = ? AND \"\n    params.append(name)\nif age:\n    query += \"age = ? AND \"\n    params.append(age)",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "date_of_arrival",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "date_of_arrival = None\nquery = \"SELECT * FROM bodies WHERE \"\nparams = []\nif name:\n    query += \"name = ? AND \"\n    params.append(name)\nif age:\n    query += \"age = ? AND \"\n    params.append(age)\nif primary_contact:",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "query",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "query = \"SELECT * FROM bodies WHERE \"\nparams = []\nif name:\n    query += \"name = ? AND \"\n    params.append(name)\nif age:\n    query += \"age = ? AND \"\n    params.append(age)\nif primary_contact:\n    query += \"primary_contact = ? AND\"",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "params",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "params = []\nif name:\n    query += \"name = ? AND \"\n    params.append(name)\nif age:\n    query += \"age = ? AND \"\n    params.append(age)\nif primary_contact:\n    query += \"primary_contact = ? AND\"\n    params.append(primary_contact)",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "results",
+        "kind": 5,
+        "importPath": "morgue db",
+        "description": "morgue db",
+        "peekOfCode": "results = c.fetchall()\nfor row in results:\n    print(row)\n# Close the connection\nconn.close()\nimport sqlite3\nfrom datetime import datetime\n# Function to generate a new unique body ID\ndef generate_id():\n    # Connect to the database",
+        "detail": "morgue db",
+        "documentation": {}
+    },
+    {
+        "label": "Body",
+        "kind": 6,
+        "importPath": "morgue",
+        "description": "morgue",
+        "peekOfCode": "class Body:\n    def __init__(self, name, age, id, primary_contact, cause_of_death, date_of_arrival):\n        self.name = name\n        self.age = age\n        self.id = id\n        self.primary_contact = primary_contact\n        self.cause_of_death = cause_of_death\n        self.date_of_arrival = date_of_arrival\nclass Morgue:\n    def __init__(self):",
+        "detail": "morgue",
+        "documentation": {}
+    },
+    {
+        "label": "Morgue",
+        "kind": 6,
+        "importPath": "morgue",
+        "description": "morgue",
+        "peekOfCode": "class Morgue:\n    def __init__(self):\n        self.bodies = []\n    def add_body(self, body):\n        self.bodies.append(body)\n    def update_body(self, name, age, id, primary_contact, cause_of_death, date_of_arrival):\n        for body in self.bodies:\n            if body.name == name:\n                body.age = age\n                body.id = id",
+        "detail": "morgue",
+        "documentation": {}
+    }
+]
